@@ -1,0 +1,64 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 2rem;
+    background-color: rgb(1, 0, 0, .25);
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+body{
+    height: 94.2vh;
+    width: auto;
+    background: linear-gradient(217deg, rgba(5, 95, 88, 0.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(2, 122, 2, 0.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(5, 92, 146, 0.8), rgba(0,0,255,0) 70.71%)
+} 
+
+.grid-calculator{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 70vh;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: minmax(90px, auto) repeat(5, 100px);
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.output{
+    background-color: rgb(2, 47, 47);
+    grid-column: 1/-1;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 10px solid black;
+}
+
+.grid-calculator > button{
+    outline: none;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px rgba(86, 151, 179, 0.8) solid;
+}
+
+.output .pre-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  .output .cur-operand {
+    color: white;
+    font-size: 2.5rem;
+  }
