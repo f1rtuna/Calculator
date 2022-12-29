@@ -53,12 +53,17 @@ body{
     border: 2px rgba(86, 151, 179, 0.8) solid;
 }
 
+.grid-calculator > button:hover{
+    cursor: pointer;
+    background-color: rgba(2, 217, 255, 0.25);
+}
+
 .output .pre-operand {
     color: rgba(255, 255, 255, .75);
     font-size: 1.5rem;
-  }
+}
   
-  .output .cur-operand {
+.output .cur-operand {
     color: white;
     font-size: 2.5rem;
-  }
+}
